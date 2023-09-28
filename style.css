@@ -1,0 +1,397 @@
+/* flex property for everyone (if wanted) */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_space_bw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_dir_colmn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ============================================================== */
+
+/* for all */
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
+}
+
+/* for all features section */
+.fsection {
+    padding: 50px;
+    border-top: 7px solid #2a2a2a;
+    width: 100vw;
+}
+
+/* =============================================================== */
+/* landing page nav */
+#landing_page nav #main_logo {
+    height: 100px;
+}
+
+#landing_page_bg_image {
+    opacity: 0.5;
+    position: absolute;
+    /* width: 100vw; */
+    /* height: 100%; */
+    z-index: 0;
+    /* min-height: 100%; */
+}
+
+#landing_page {
+    /* background-image: url(assets/images/bg_image.jpg); */
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 120px;
+    /* add inside box shadows */
+}
+
+#lpage_nav_main_div {
+    position: relative;
+    z-index: 1;
+}
+
+#landing_page nav {
+    width: 80vw;
+}
+
+#language_selector {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 9px;
+    background-color: transparent;
+    color: white;
+}
+
+#language_selector select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding-left: 5px;
+}
+
+#language_selector select option {
+    color: black;
+}
+
+#landing_page nav ul #signin_btn {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 9px;
+    background-color: red;
+    margin-left: 20px;
+    transition: ease 100ms;
+}
+
+#landing_page nav ul #signin_btn a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#landing_page #main {
+    color: white;
+    padding-top: 148px;
+}
+
+#landing_page #main h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    max-width: 1000px;
+    text-align: center;
+    /* padding-top: 150px; */
+
+}
+
+
+#landing_page #main h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+#landing_page #main h2 {
+    margin-top: 16px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* landing page nav hover effects */
+#lpage_nav_main_div #signin_btn:hover {
+    background-color: rgb(179, 0, 0);
+    border-color: rgb(179, 0, 0);
+}
+
+/* =============================================================== */
+
+/* features */
+
+/* enjoy section */
+#enjoy #enjoy_left {
+    margin-right: 124px;
+}
+
+#enjoy #enjoy_left h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#enjoy #enjoy_left p {
+    margin-top: 16px;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 470px;
+}
+
+#enjoy #enjoy_right img {
+    width: 420px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 1;
+
+
+}
+
+#enjoy_right {
+    position: relative;
+}
+
+#enjoy_right video {
+    z-index: 0;
+    height: 172px;
+    margin-left: 47px;
+    margin-top: 81px;
+    margin-bottom: 94px;
+}
+
+/* download section */
+#download_right h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    max-width: 470px;
+}
+
+#download_right p {
+    margin-top: 16px;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 470px;
+}
+
+#download_left img {
+    width: 430px;
+    margin-right: 40px;
+}
+
+#download_left {
+    position: relative;
+}
+
+#download_left #boxshot_div {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    background-color: black;
+    margin-right: 40px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin-top: 170px;
+
+
+}
+
+#download_left #boxshot_div img {
+    width: 60px;
+    margin-right: 12px;
+}
+
+#download_left #boxshot_div video {
+    height: 50px;
+}
+
+/* watch section */
+#watch_left h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+#watch_left{
+    margin-right: 88px;
+
+}
+
+#watch_left p {
+    margin-top: 16px;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 470px;
+}
+
+#watch_right img {
+    width: 430px;
+    margin-left: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+#watch_right {
+    position: relative;
+}
+
+#watch_right video {
+    /* position: absolute; */
+    /* z-index: 0; */
+    height: 156px;
+    margin-left: 111px;
+    margin-top: 26px;
+    margin-bottom: 94px;
+}
+
+/* create section */
+#create_right h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#create_right p {
+    margin-top: 16px;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 470px;
+}
+
+#create_left img {
+    width: 430px;
+    margin-right: 40px;
+}
+
+/* =============================================================== */
+
+/* faq section */
+#faq #faq_heading {
+    font-size: 2.1rem;
+    font-weight: 900;
+    text-align: center;
+    width: 80vw;
+    margin-bottom: 30px;
+}
+
+#faq #faq_getstarted p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.faq_block {
+    margin: 10px;
+}
+
+.questions {
+    width: 80vw;
+    padding: 24px;
+    font-size: 24px;
+    background-color: #2a2a2a;
+    cursor: pointer;
+}
+
+.answers {
+    display: none;
+    /* transition: 400ms ease-in; */
+    width: 80vw;
+    padding: 24px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    background-color: #353535;
+
+}
+
+/* hover effects on faq questions */
+.questions:hover {
+    transition: 200ms;
+    background-color: #474747;
+}
+
+/* =============================================================== */
+/* footer section */
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer_list table {
+    width: 80vw;
+}
+
+#footer_list table tr td {
+    padding: 2px 0;
+}
+
+#footer_list table tr td a,
+#footer_call p,
+#footer_call a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#footer_call {
+    padding: 12px 0;
+    width: 80vw;
+}
+
+
+
+#footer_branding {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+#footer_branding ul li {
+    width: 141px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer_branding p {
+    padding-top: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+/* =============================================================== */
